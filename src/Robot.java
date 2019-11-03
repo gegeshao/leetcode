@@ -8,8 +8,8 @@ public class Robot {
         Angle =Angle+command.getChangeAngle();
         if(Angle<0)
             Angle=Angle+360;
-        Robot_Position.robot_x+=command.getDistance()*Math.sin(Math.PI*Angle/180);
-        Robot_Position.robot_y+=command.getDistance()*Math.cos(Math.PI*Angle/180);
+        Robot_Position.robot_y+=command.getDistance()*Math.sin(Math.PI*Angle/180);
+        Robot_Position.robot_x+=command.getDistance()*Math.cos(Math.PI*Angle/180);
         Robot_Position.direction=Direction(Angle);
     }
 

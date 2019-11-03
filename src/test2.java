@@ -1,6 +1,6 @@
 public class test2 {
     public static void main(String args[]){
-        Position P= new Position(0,0,"N");
+        Position P= new Position(1,0,"N");
         Robot R= new Robot(P);
        R.Move(Command.LEFT);
        R.Move(Command.FORWARD);
